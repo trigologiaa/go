@@ -1,4 +1,4 @@
-module data_structures_go
+module github.com/trigologiaa/go
 
 go 1.24.3
 
