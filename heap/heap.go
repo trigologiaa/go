@@ -170,3 +170,14 @@ func (h *Heap[T]) upHeap(i int) {
 		i = parent
 	}
 }
+
+// Comparator() returns the comparison function used by the heap.
+//
+// Returns:
+//   - A function that compares two elements and returns:
+//   - A negative value if the first element is less than the second.
+//   - Zero if both elements are equal.
+//   - A positive value if the first element is greater than the second.
+func (h *Heap[T]) Comparator() func(a, b T) int {
+	return h.compare
+}
